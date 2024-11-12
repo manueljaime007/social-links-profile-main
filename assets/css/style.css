@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'font';
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+:root{
+    --Green: hsl(75, 94%, 57%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+
+    --font-weight-title: 700;
+    --font-weight-subtitle: 600;
+    --font-weight-paragraph: 400;
+
+
+    p{
+        font-size: 14px;
+    }
+
+}
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'font';
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--Grey-900);
+}
+
+.wrapper{
+    height: 100%;
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper article.wrapper__card{
+    background-color: var(--Grey-800);
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 350px;
+}
+
+article.wrapper__card .wrapper__card-image img{
+    width: 80px;    
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+article.wrapper__card .wrapper__card-info{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    margin-bottom: 1rem;
+}
+article.wrapper__card .wrapper__card-info h1{
+    color: var(--White);
+
+}
+article.wrapper__card .wrapper__card-info h2{
+    color: var(--Green);
+    font-size: .8rem;
+    margin-bottom: 1rem;   
+}
+article.wrapper__card .wrapper__card-info p{
+    font-size: .8rem;
+    font-weight: var(--font-weight-paragraph);
+}
+
+
+article.wrapper__card .wrapper__card-social-media ul{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+article.wrapper__card .wrapper__card-social-media a{
+    background-color: var(--Grey-700);
+    width: 100%;
+    display: block;
+    padding: .9rem;
+    border-radius: 5px;
+    color: var(--White);
+    font-weight: var(--font-weight-subtitle);
+    font-size: .9rem;
+}
+
+article.wrapper__card .wrapper__card-social-media a:hover{
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
